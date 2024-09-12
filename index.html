@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Visualization</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Map Visualization</h1>
+
+        <!-- Upload Form -->
+        <div class="mb-4">
+            <form id="upload-form" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="csv-file">Upload CSV File:</label>
+                    <input type="file" id="csv-file" name="file" class="form-control-file">
+                </div>
+                <button type="submit" class="btn btn-primary">Upload</button>
+            </form>
+        </div>
+
+        <!-- Filter Section
+        <div class="mb-4">
+            <h2>Filters</h2>
+            <form id="filter-form">
+                <div class="form-group">
+                    <label for="league">League Division:</label>
+                    <select id="league" class="form-control">
+                        <option value="">Select...</option>
+                        <option value="Mixed Doubles">Mixed Doubles</option>
+                        <option value="Women's Doubles">Women's Doubles</option>
+                        <option value="Men's Doubles">Men's Doubles</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age Interest:</label>
+                    <select id="age" class="form-control">
+                        <option value="">Select...</option>
+                        <option value="Adults (18+)">Adults (18+)</option>
+                        <option value="Seniors (55+)">Seniors (55+)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="level">Level of Play:</label>
+                    <select id="level" class="form-control">
+                        <option value="">Select...</option>
+                        <option value="2.0 or below">2.0 or below</option>
+                        <option value="2.5">2.5</option>
+                        <option value="3.0">3.0</option>
+                        <option value="3.5">3.5</option>
+                        <option value="4.0">4.0</option>
+                        <option value="4.5">4.5</option>
+                        <option value="4.5 or above">4.5 or above</option>
+                    </select>
+                </div>
+                <button type="button" id="apply-filters" class="btn btn-primary">Apply Filters</button>
+            </form>
+        </div> -->
+
+         Map Container 
+        <div id="map-container" style="position: relative; height: 600px;">
+            <div id="map" style="height: 100%;"></div>
+       
+        </div>
+    </div>
+
+   
+    <div id="loading" class="loading">Loading...</div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>
